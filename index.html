@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKP Amanahcom - Kursus Komputer Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans scroll-smooth">
+
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-700 tracking-wide flex items-center gap-2">
+                <i class="fas fa-laptop-code"></i> LKP Amanahcom
+            </a>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="hover:text-blue-700 transition">Home</a>
+                <a href="#kursus" class="hover:text-blue-700 transition">Program Kursus</a>
+                <a href="#daftar" class="hover:text-blue-700 transition">Pendaftaran</a>
+                <a href="#kontak" class="hover:text-blue-700 transition">Kontak</a>
+            </nav>
+            <a href="#daftar" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full font-semibold transition text-sm hidden sm:block shadow-md">
+                Daftar Sekarang
+            </a>
+        </div>
+    </header>
+
+    <section id="home" class="bg-gradient-to-br from-blue-900 to-indigo-800 text-white py-20 px-4">
+        <div class="container mx-auto max-w-5xl text-center">
+            <span class="bg-blue-500/30 text-blue-200 text-sm font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">Berusaha Menjadi Kreator Digital Profesional</span>
+            <h1 class="text-4xl md:text-5xl font-extrabold mt-6 leading-tight">
+                Kuasai Keterampilan Komputer <br class="hidden md:block"> Bersama LKP Amanahcom
+            </h1>
+            <p class="text-lg text-blue-100 mt-4 max-w-2xl mx-auto">
+                Langkah nyata meningkatkan keahlian digital untuk dunia kerja dan bisnis. Belajar intensif dari dasar hingga mahir.
+            </p>
+            <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <a href="#kursus" class="bg-amber-500 hover:bg-amber-600 text-white font-bold px-8 py-3 rounded-lg shadow-lg transition">
+                    Lihat Pilihan Kursus
+                </a>
+                <a href="#daftar" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-bold px-8 py-3 rounded-lg transition">
+                    Mulai Belajar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kursus" class="py-20 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">Program Kursus Unggulan</h2>
+                <p class="text-gray-600 mt-2">Materi yang dirancang khusus sesuai dengan kebutuhan dunia kerja saat ini.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="far fa-file-word"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Microsoft Word</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Kuasai pembuatan dokumen profesional, surat-menyurat, laporan formal, pembuatan surat massal (Mail Merge), hingga teknik formatting yang rapi.
+                        </p>
+                    </div>
+                    <a href="#daftar" onclick="setKursus('Microsoft Word')" class="mt-6 text-blue-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition">
+                        Pilih Paket <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="far fa-file-excel"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Microsoft Excel</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Belajar mengolah data, membuat tabel laporan finansial, grafik interaktif, hingga menguasai rumus esensial seperti VLOOKUP, HLOOKUP, dan Pivot Table.
+                        </p>
+                    </div>
+                    <a href="#daftar" onclick="setKursus('Microsoft Excel')" class="mt-6 text-green-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition">
+                        Pilih Paket <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6">
+                            <i class="far fa-file-powerpoint"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Microsoft PowerPoint</h3>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Desain presentasi yang memukau dan interaktif. Pelajari teknik penggunaan animasi, transisi modern, infografis, dan penyusunan slide yang efektif.
+                        </p>
+                    </div>
+                    <a href="#daftar" onclick="setKursus('Microsoft PowerPoint')" class="mt-6 text-orange-600 font-semibold inline-flex items-center gap-2 hover:gap-3 transition">
+                        Pilih Paket <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="daftar" class="bg-gray-100 py-20 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                
+                <div id="kontak">
+                    <h2 class="text-3xl font-bold text-gray-900">Hubungi Kami</h2>
+                    <p class="text-gray-600 mt-3 mb-8">Punya pertanyaan seputar jadwal atau biaya kursus? Jangan ragu untuk datang atau berkonsultasi langsung.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 id="icon" class="text-blue-600 text-xl mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Lokasi Lembaga</h4>
+                                <p class="text-gray-600 text-sm mt-1">Jl.Raya Panimbang-Teluklada Kp. PematangTengah Ds. Mekarjaya Kec. Panimbang, Kab.Pandeglang, Banten</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="text-blue-600 text-xl mt-1">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Jam Operasional</h4>
+                                <p class="text-gray-600 text-sm mt-1">Senin - minggu: 08.00 - 16.00 WIB. Hari Jumat Libur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Formulir Pendaftaran</h3>
+                    <p class="text-sm text-gray-500 mb-6">Isi formulir berikut, tim kami akan langsung menghubungi Anda.</p>
+                    
+                    <form onsubmit="kirimKeWhatsApp(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Lengkap</label>
+                            <input type="text" id="nama" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="Masukkan nama Anda">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Nomor WhatsApp</label>
+                            <input type="tel" id="whatsapp" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition" placeholder="Contoh: 081234567xxx">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-gray-700 mb-1">Pilih Program Kursus</label>
+                            <select id="pilihan_kursus" required class="w-full px-4 py-2.5 border border-gray-300 rounded-lg bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
+                                <option value="">-- Pilih Kursus --</option>
+                                <option value="Microsoft Word">Microsoft Word</option>
+                                <option value="Microsoft Excel">Microsoft Excel</option>
+                                <option value="Microsoft PowerPoint">Microsoft PowerPoint</option>
+                                <option value="Paket Lengkap (Word, Excel, PPT)">Paket Lengkap (Word, Excel, PPT)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg shadow-md transition mt-2 flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-lg"></i> Kirim via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-gray-400 py-8 border-t border-gray-800 text-sm">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <div>
+                <p>&copy; 2026 LKP Amanahcom. Panimbang, Pandeglang. All rights reserved.</p>
+            </div>
+            <div class="flex space-x-4 text-lg">
+                <a href="#" class="hover:text-white transition"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Fungsi otomatis memilih kursus ketika tombol "Pilih Paket" di klik
+        function setKursus(namaKursus) {
+            document.getElementById('pilihan_kursus').value = namaKursus;
+        }
+
+        // Fungsi mengarahkan pengisian form langsung ke nomor WhatsApp pengelola
+        function kirimKeWhatsApp(event) {
+            event.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const waUser = document.getElementById('whatsapp').value;
+            const kursus = document.getElementById('pilihan_kursus').value;
+            
+            // Masukkan nomor WhatsApp LKP Amanahcom di sini (gunakan format kode negara 62)
+            const nomorAdmin = "6287709944192"; 
+            
+            const teksPesan = `Halo LKP Amanahcom, saya ingin mendaftar kursus.%0A%0A*Nama:* ${nama}%0A*No. WA:* ${waUser}%0A*Kursus yang Diikuti:* ${kursus}`;
+            
+            const urlWhatsApp = `https://api.whatsapp.com/send?phone=${nomorAdmin}&text=${teksPesan}`;
+            
+            window.open(urlWhatsApp, '_blank');
+        }
+    </script>
+</body>
+</html>
